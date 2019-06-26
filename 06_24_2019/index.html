@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            /* border: 1px solid red;
+            height: 300px;
+            width: 500px;
+            /* transform: rotateY(130deg); */
+            /* Standard syntax */
+            /* background: url(images/cool-wallpaper-preview-3.jpg); */
+            /* transition: width 2s; */
+            /* transition: width 2s, border-radius 2s;
+            transition-delay: 5s;
+
+            transition-property: width;
+            transition-duration: 2s; */
+            /* transition-timing-function: linear; */
+            /* transition-delay: 1s; */
+
+
+            /* animation-name: myAni;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in */
+        }
+
+        /* div:hover {
+            width: 50%;
+            border-radius: 100px;
+
+        } */
+
+
+        @keyframes myAni {
+            0% {
+                background-color: red;
+                position: relative;
+                left: 100px;
+                /* border-radius: 100% */
+            }
+
+            25% {
+                background-color: green;
+                /* border: 10px solid red; */
+                left: 200px;
+            }
+
+            50% {
+                background-color: blue;
+                /* border: none;
+                border-radius: 0px; */
+                left: 300px;
+
+            }
+
+            75% {
+                background-color: purple;
+                /* width: 100px;
+                height: 100px; */
+                left: 400px;
+
+            }
+
+            100% {
+                background-color: yellow;
+                /* width: 100px;
+                height: 100px;
+                border-radius: 100% */
+                position: relative;
+                left: 500px;
+            }
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .t-image {
+            /* width: 300px; */
+            /* height: 200px; */
+            border: 1px solid #aaaaaa;
+            padding: 5px;
+            border-radius: 4px;
+            max-width: 100%;
+
+            filter: grayscale(100%);
+
+        }
+
+        .t-image:hover {
+            box-shadow: 4px 3px 10px 5px #aaaaaa;
+        }
+
+        .login {
+            padding: 15px 20px;
+            background-color: green;
+            border: 2px solid green;
+
+            border: none;
+            font-size: 16px;
+            color: #fff;
+
+        }
+
+        .login:hover {
+
+            background-color: blue;
+
+        }
+
+        .border-login {
+            background-color: #ffffff;
+            border: 2px solid green;
+            padding: 15px 20px;
+            font-size: 16px;
+            color: green;
+        }
+
+        .border-login:hover {
+            background-color: green;
+            color: #ffffff;
+            /* border: 2px solid green; */
+
+        }
+
+        .clm {
+            column-count: 4;
+            column-gap: 40px;
+            column-rule: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="clm">
+
+        Ut Lorem aute incididunt proident dolore eu occaecat commodo laborum. Ut fugiat sit fugiat laborum et
+        reprehenderit magna. Dolor excepteur reprehenderit aute officia eu velit sunt nostrud esse minim ex.
+
+        Sint ad proident dolore sit labore ex dolor. Quis enim mollit in nulla. Amet fugiat aute fugiat enim
+        exercitation. Reprehenderit veniam nisi ex in. Aliqua officia dolor nisi veniam eiusmod do fugiat irure id nisi
+        ipsum excepteur.
+
+        Mollit cupidatat do voluptate excepteur non eiusmod non quis minim sunt dolore occaecat nostrud. Consectetur
+        tempor reprehenderit consectetur labore. Commodo ipsum ullamco irure duis. Fugiat velit sit anim laborum tempor
+        eiusmod sint enim deserunt fugiat veniam incididunt sunt. Do exercitation excepteur ut esse voluptate esse
+        dolore irure duis laborum.
+
+        Elit ullamco incididunt anim Lorem velit. Commodo mollit velit sit laboris aliquip. Excepteur minim ipsum dolor
+        anim quis mollit do. Eiusmod commodo consectetur Lorem velit cillum nulla. Enim pariatur do ut labore duis ipsum
+        elit. Et ullamco laborum tempor commodo incididunt sint consequat aliquip sit esse aute. Ut velit exercitation
+        pariatur consectetur consectetur tempor.
+
+        Deserunt elit fugiat sunt qui occaecat aute irure deserunt est ut. Tempor aliquip sint cupidatat ad officia
+        culpa excepteur sunt incididunt dolore velit et. Ad exercitation veniam eiusmod id aute consectetur veniam quis
+        duis fugiat qui sint consequat aliquip.
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <button class="login"> Login</button>
+    <button class="border-login"> Login</button>
+
+    <img src="images/cool-wallpaper-preview-3.jpg" alt="" class="t-image">
+
+    <div class="tooltip">Hover over me
+
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+</html>

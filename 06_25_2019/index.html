@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #main {
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        .main {
+            height: 500px;
+            border: 1px solid green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main">
+        asd
+    </div>
+    <div class="main">
+        asd
+    </div>
+    <div class="main">
+        asd
+    </div>
+    <div class="main">
+        asd
+    </div>
+    <div class="main">
+        asd
+    </div>
+    <div class="main">
+        asd
+    </div>
+
+    <p id="ChangeName"></p>
+
+    <button onclick="fun()">
+        write
+    </button>
+
+
+
+
+    <a href="#main"> click to main </a>
+
+
+
+
+
+
+    <!-- ----------- script open ------------- -->
+
+    <!-- <script src="js/demo.js"></script> -->
+    <script>
+
+        // 32 16 8 4 2 1
+
+        // 15; 1111
+        // 10; 1010 
+
+        // bit value =>
+
+        var a = 5;
+        var b = 10;
+        var c = 5;
+        console.log('sum', c);
+
+        c++;
+
+        // var sum = a % c;
+
+        console.log('sum', c);
+
+        var one = true;
+        var two = 'false'
+
+        console.log('sum', typeof (two))
+        if (!one) {
+
+            console.log('Okay');
+
+        } else {
+
+            console.log(' Not Okay');
+
+        }
+
+
+
+
+        // document.getElementById('ChangeName').innerHTML = sum;
+
+        // document.write('new Page Update')
+        // alert('Welcome')
+
+        // console.log('code Changes', 10 + 5)
+        function fun() {
+            console.log('fun()')
+        }
+    </script>
+
+    <!-- ----------- script close ------------- -->
+
+</body>
+
+</html>

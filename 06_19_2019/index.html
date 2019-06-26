@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .card {
+            float: left;
+            border: 1px solid #aaaaaa;
+            width: 320px;
+            margin: 0 30px;
+            box-shadow: 0px 3px 10px 2px #aaaaaa;
+            border-radius: 4px;
+            margin-top: 75px;
+
+        }
+
+        .card-body {
+            padding: 15px;
+
+        }
+
+        .heading {
+            text-align: center;
+
+            font-size: 16px;
+            font-weight: 600;
+
+
+        }
+
+        input {
+            margin: 15px 0px;
+            padding: 10px 0px;
+            width: 100%;
+            border: 1px solid #aaaaaa;
+            border-radius: 4px;
+
+        }
+
+        .btn {
+            background-color: green;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 300;
+            border: none;
+            border-radius: 4px;
+        }
+
+        :focus {
+            outline: none;
+            /* border: none; */
+        }
+
+        .width {
+            border: 1px solid red;
+            /* width: 200px; */
+            /* min-width: 100px; */
+            max-width: 500px;
+
+            margin: 0 auto;
+
+            overflow: visible;
+            overflow-x: auto;
+            overflow-y: auto;
+
+        }
+
+        .div1,
+        .div2 {
+            border: 1px solid red;
+            float: left;
+        }
+
+        .div1 {
+            /* height: 500px; */
+        }
+
+        .display {
+            border: 1px solid red;
+
+            display: inline-block;
+        }
+
+        .centerDiv {
+            border: 1px solid red;
+            width: 320px;
+            margin: 15% auto;
+        }
+
+        /* .centerDiv p {
+            color: red;
+        } */
+
+        .centerDiv>p {
+            color: red;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #FF00FF;
+        }
+
+        /* selected link */
+        a:active {
+            color: #0000FF;
+        }
+
+        li:first-child {
+            color: pink;
+        }
+
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+
+        p::selection {
+            background-color: red;
+        }
+
+        .testB_A {}
+
+        .testB_A::before {
+            content: 'R'
+        }
+
+        .testB_A::after {
+            content: 'G'
+        }
+
+        .opt {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        #opt {}
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="opt" id="opt">
+        asd
+    </div>
+
+    <img src="images/cool-wallpaper-preview-3.jpg" alt="">
+
+    <a href="#"> page link</a>
+    <p class="testB_A">
+
+
+        My Name
+
+    </p>
+    <p> displaydisplaydisplaydisplay
+        displaydisplaydisplaydisplay
+        displaydisplaydisplaydisplay
+        displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+        displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+        displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+        displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+        displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+        displaydisplaydisplaydisplay
+
+    </p>
+
+    <ul>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+        <li>
+            displaydisplaydisplaydisplay
+        </li>
+    </ul>
+
+    <div class="centerDiv">
+
+        <p> displaydisplaydisplaydisplay <br>
+            <br> <br> <br> <br> <br>
+            displaydisplaydisplaydisplay
+
+        </p>
+
+    </div>
+
+
+
+    <div class="display">
+
+        displaydisplaydisplaydisplay <br>
+        <br> <br> <br> <br> <br>
+        displaydisplaydisplaydisplay
+
+    </div>
+    <div class="display">
+
+        displaydisplaydisplaydisplay
+        displaydisplaydisplaydisplay
+
+    </div>
+
+    <!-- <div style="clear: both">
+
+
+        <div class="div1">
+            div1div1div1div1
+            <br><br>brb
+
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+            div1div1div1div1
+
+
+
+        </div>
+        <div class="div2">
+            div2
+        </div>
+
+    </div>
+    <div class="width">
+        widthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidth
+
+
+        widthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidthwidth
+    </div> -->
+
+
+    <!-- <div class="card">
+        <div class="card-body">
+            <div class="heading"> Login</div>
+            <form>
+
+                <input type="text" placeholder=" user Name">
+                <input type="password" placeholder=" password">
+
+                <input type="button" class="btn" value=" Login">
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="heading"> Login</div>
+            <form>
+
+                <input type="text" placeholder=" user Name">
+                <input type="password" placeholder=" password">
+
+                <input type="button" class="btn" value=" Login">
+
+
+            </form>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

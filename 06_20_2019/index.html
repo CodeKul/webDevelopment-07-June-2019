@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        ul {
+            background-color: #aaaaaa;
+            padding: 15px 0px;
+        }
+
+        li {
+            list-style-type: none;
+            /* display: inline; */
+            margin-right: 5px;
+            padding: 15px;
+            /* border: 1px solid red; */
+            background-color: green;
+            color: #ffffff;
+        }
+
+        li a {
+            color: #ffffff;
+
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #03c503;
+            color: #ffffff;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .dropdwonMain {
+
+            border: 1px solid red;
+            width: 320px;
+            display: none;
+        }
+
+        .dropdwonMain:hover .menu {
+            display: block;
+        }
+
+
+        .card {
+            float: left;
+            width: 320px;
+            border: 1px solid #aaaaaa;
+            border-radius: 4px;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .img-top {
+            max-width: 100%;
+        }
+
+        .bg-image {
+            height: 43px;
+            width: 47px;
+
+            background-image: url('images/img_navsprites.gif');
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+        }
+
+        .bg-image-1 {
+            height: 43px;
+            width: 47px;
+
+            background-image: url('images/img_navsprites.gif');
+            background-repeat: no-repeat;
+            background-position: 43px 0px;
+        }
+
+        input[type="text"] {
+            background-color: red;
+        }
+
+        body {
+            counter-reset: section;
+        }
+
+        p::before {
+            counter-increment: section;
+            content: "Section "counter(section) ": ";
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="text" name="" id="">
+
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+    <p> test</p>
+
+    <div class="bg-image">
+
+    </div>
+    <div class="bg-image-1">
+
+    </div>
+    <div class="card">
+
+        <img src="images/cool-wallpaper-preview-3.jpg" alt="" class="img-top">
+        <div class="card-body">
+            Open Menu
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img src="images/cool-wallpaper-preview-3.jpg" alt="" class="img-top">
+        <div class="card-body">
+            Open Menu
+
+        </div>
+    </div>
+
+
+    <div class="dropdwonMain">
+
+        Open Menu
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href=""> Home</a>
+                </li>
+                <li>
+                    <a href=""> about</a>
+                </li>
+                <li>
+                    <a href=""> page1</a>
+                </li>
+                <li>
+                    <a href=""> page1</a>
+                </li>
+                <li>
+                    <a href=""> page1</a>
+                </li>
+                <li>
+                    <a href=""> page1</a>
+                </li>
+                <li>
+                    <a href=""> page1</a>
+                </li>
+                <li>
+                    <a href=""> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- <ul>
+        <li>
+            <a href=""> Home</a>
+        </li>
+        <li>
+            <a href=""> about</a>
+        </li>
+        <li>
+            <a href=""> page1</a>
+        </li>
+        <li>
+            <a href=""> page1</a>
+        </li>
+        <li>
+            <a href=""> page1</a>
+        </li>
+        <li>
+            <a href=""> page1</a>
+        </li>
+        <li>
+            <a href=""> page1</a>
+        </li>
+        <li>
+            <a href=""> Contact</a>
+        </li>
+    </ul> -->
+
+</body>
+
+</html>

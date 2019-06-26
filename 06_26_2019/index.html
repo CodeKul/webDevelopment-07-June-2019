@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+    <input type="text " value="007" id="myText " onchange="myFun('onfocus') ">
+
+    <button onmouseover="myFun('onclick') "> click</button>
+    <p id="myP"></p>
+
+    <script>
+
+        // document.getElementById('myP').innerHTML = ' Updated Value'
+        // document.write(' Updated Value write ' );
+        // window.alert('Welcome to JS')
+        // console.log('co')
+
+
+        // MouseEvent
+
+        // onclick
+        // ondblclick
+        // onmouseover
+        // onmouseleave
+        // onmousemove
+        // onmouseenter
+
+
+        // KeyboardEvent
+        // onkeypress 1 
+        // onkeydown  1
+        // onkeyup    1
+
+
+        // form Event
+
+        // onblur     
+        // onfocus
+        // onchange 
+        // onsubmit
+        // onreset
+
+
+
+        // document Event
+
+        // onload
+        // onunload 
+
+
+
+
+
+
+
+
+
+
+        function myFun(getData) {
+
+            console.log('Event call', getData)
+
+
+        }
+        function myFun2(a, b) {
+            return a + b
+        }
+
+
+        var total = myFun2(50, 20);
+        console.log('total', total)
+
+
+        var num = 4;
+
+        var str = 'string';
+
+        var obj = { firstName: "John", lastName: "Doe" };
+
+
+        console.log('obj', obj['lastName'])
+        var bol = true
+
+
+        var arry = ['ravi', 'sandip'];
+
+
+
+        console.log('typeOf ==>', typeof (arry));
+    </script>
+
+</body>
+
+</html>
