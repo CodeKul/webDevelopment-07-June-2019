@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .spn {
+            height: 100px;
+            width: 100px;
+            border: 10px solid black;
+            border-top: 10px solid white;
+            /* border-top: 10px solid red;
+            border-right: 10px solid red;
+            border-bottom: 10px solid red;
+            border-left: 10px solid transparent; */
+            border-radius: 100%;
+            margin: 15% auto;
+            animation: myAni 3s linear infinite
+        }
+
+        @keyframes myAni {
+
+            0% {
+                transform: rotate(0deg)
+            }
+
+            25% {
+                transform: rotate(90deg)
+            }
+
+            50% {
+                transform: rotate(180deg)
+            }
+
+            75% {
+                transform: rotate(270deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .spn1 {
+            height: 80px !important;
+            width: 80px !important;
+            border-top: 10px solid green;
+            border-right: 10px solid green;
+            border-bottom: 10px solid green;
+            border-left: 10px solid transparent;
+            border-radius: 100%;
+            animation: myAni 2s linear infinite
+        }
+
+        .spn2 {
+            height: 60px !important;
+            width: 60px !important;
+            border-top: 10px solid yellow;
+            border-right: 10px solid yellow;
+            border-bottom: 10px solid yellow;
+            border-left: 10px solid transparent;
+            border-radius: 100%;
+            animation: myAni 1s linear infinite reverse;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p id="myId"> string</p>
+
+
+
+    <script>
+
+        var temp = document.getElementById('myId').innerHTML = "linear 'infinite' reverse                   "
+
+        var str = "Please locate where 'locate' occurs!";
+        console.log('temp.length', temp);
+
+        var pos = temp.charCodeAt(0);
+        console.log('temp.length', pos);
+
+        var txt = "a,b,c,d,e";   // String
+        // txt.split(",");          // Split on commas
+        console.log('txt',  txt.split(","));
+
+
+
+        var str = 'string'
+        var no = 10
+
+
+    </script>
+
+</body>
+
+</html>
