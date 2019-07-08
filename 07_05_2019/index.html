@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #div1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        #div2 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+
+        #div3 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="hide">
+        hide
+
+    </div>
+    <div id="show">
+        show
+    </div>
+    <!-- <div style="border: 1px solid red;
+    ">
+        <p> rest</p>
+
+        <p>API</p>
+
+        <p>test</p>
+
+
+    </div> -->
+    <button> toggle</button>
+    <button class="button1"> button1</button>
+    <button class="button2"> button2</button>
+
+    <button class="button3"> button3</button>
+
+
+    <div id="div1">
+
+    </div>
+
+    <div id="div2">
+
+    </div>
+    <div id="div3">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        // $(selector).action();
+
+        // $("p").hide()
+        // $(document).ready(function () {
+        //     $(this).click(function () {
+        //         $("p").hide();
+        //     });
+        // });
+
+
+        // $("p").click(function () {
+        //     $(this).hide();
+        // });
+
+
+        $("#hide").click(function () {
+            $("p").hide();
+        });
+
+        $("#show").click(function () {
+            $("p").show();
+        });
+        // $("button").click(function () {
+        //     $("p").toggle();
+        // });
+
+
+        $(".button1").click(function () {
+            // $("#div1").fadeIn();
+            // $("#div2").fadeIn("slow");
+            // $("#div3").fadeIn(3000);
+            $("#div1").slideDown();
+            // $("#div2").fadeIn("slow");
+            // $("#div3").fadeIn(3000);
+
+            $("#div1").animate({
+                left: '250px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'
+            });
+        });
+        $(".button2").click(function () {
+            // $("#div1").fadeOut();
+            // $("#div2").fadeOut("slow");
+            // $("#div3").fadeOut(3000);
+            $("#div1").slideUp();
+
+        })
+
+        $(".button3").click(function () {
+            // $("#div1").fadeToggle();
+            // $("#div2").fadeToggle("slow");
+            // $("#div3").fadeToggle(3000);
+
+            $("#div1").slideToggle()
+        });
+
+
+        $("button").click(function () {
+            $("p").hide("slow", function () {
+                alert("The paragraph is now hidden");
+            });
+        });
+
+        $("button").click(function () {
+            $("p").hide(1000);
+            alert("The paragraph is now hidden");
+        });
+    </script>
+</body>
+
+</html>

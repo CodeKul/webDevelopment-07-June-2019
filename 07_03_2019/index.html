@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="loadDoc()"> click </button>
+
+    <p id="demo"></p>
+
+    <script>
+
+
+        var user = {
+            name: '',
+            age: 10
+        }
+
+        function loadDoc() {
+
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+
+                    var temp = JSON.parse(this.responseText)
+                    console.log('temp', temp);
+
+
+                    // for (let i = 0; i < this.responseText.length; i++) {
+                    //     const element = this.responseText[i];
+                    //     console.log('this.responseText', element)
+                    // }
+                    // this.responseText.forEach(element => {
+                    //     console.log('this.responseText', element)
+
+                    // });
+                }
+            };
+
+
+            xhttp.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+            xhttp.send();
+        }
+
+
+
+        function myName(params) {
+
+        } myName(100);
+
+
+
+
+        // console.log(' window.innerWidth;', window.innerWidth, ' window.innerHeight;', window.innerHeight);
+
+        // console.log('', screen.width, screen.height, screen.colorDepth);
+
+        // console.log('window.location', window.location);
+
+        // console.log('window.history', window.history);
+
+        // // window.confirm("sometext");
+
+        // // window.prompt("sometext", "defaultText");
+
+        // // window.open('https://www.w3schools.com/js/js_window.asp')
+        // var i = 0
+
+        // // i++
+
+
+
+
+
+        // var x = setInterval(() => {
+
+
+        //     console.log('===>', i++)
+
+        //     // console.log('1000', i)
+        //     if (i === 10) {
+
+        //         clearInterval(x)
+
+        //     }
+
+        // }, 100);
+
+        // console.log('---->', i)
+
+        // // setTimeout(() => {
+        // //     console.log('1000')
+
+        // // }, 1000);
+
+    </script>
+
+</body>
+
+</html>

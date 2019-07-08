@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 280px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Hello.<MARQUEE VSPACE=50 BGCOLOR=YELLOW>Howdy there!</MARQUEE>Hi There! -->
+
+
+    <form action="">
+
+        <fieldset>
+            <legend>Login</legend>
+            User Name:<br>
+            <input type="email" name="email" id="emailId"><br>
+            Password:<br>
+            <input type="password" name="password" id="passwordId"><br><br>
+            <input type="button" value="login" onclick="clickLogin()">
+        </fieldset>
+
+    </form>
+
+    <!-- 
+    <button onclick="loadDoc()"> click </button>
+
+    <p id="demo"></p> -->
+
+    <script>
+
+
+
+        function clickLogin() {
+            var email = document.getElementById('emailId').value
+            var password = document.getElementById('passwordId').value
+
+            // var loginObj = {
+            //     ID: 0,
+            //     UserName: email,
+            //     Password: password
+            // }
+
+            var testObj = { "name": "RajPati1l", "salary": "123", "age": "23" }
+            console.log('loginObj', loginObj)
+            callLogin(testObj)
+        }
+
+
+        function callLogin(loginObj) {
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log('tempJSON', JSON.parse(this.responseText))
+                }
+
+            };
+
+
+            xhttp.open("POST", "http://dummy.restapiexample.com/api/v1/create", true);
+            xhttp.send(JSON.stringify(loginObj));
+            loadDoc()
+        }
+
+
+        function loadDoc() {
+
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+                    var tempJSON = JSON.parse(this.responseText);
+
+                    console.log('tempJSON', tempJSON)
+
+                    for (let i = 0; i < 10; i++) {
+                        const element = tempJSON[i];
+                        console.log('this.responseText', element);
+                        document.getElementById("demo").innerHTML = element.employee_name;
+
+                    }
+
+                    // this.responseText.forEach(element => {
+                    //     console.log('this.responseText', element)
+
+                    // });
+                }
+
+            };
+
+
+            xhttp.open("GET", "http://dummy.restapiexample.com/api/v1/employees/87619", true);
+            xhttp.send();
+
+        }
+
+
+
+        function myName(params) {
+
+        } myName(100);
+
+
+
+
+        // console.log(' window.innerWidth;', window.innerWidth, ' window.innerHeight;', window.innerHeight);
+
+        // console.log('', screen.width, screen.height, screen.colorDepth);
+
+        // console.log('window.location', window.location);
+
+        // console.log('window.history', window.history);
+
+        // // window.confirm("sometext");
+
+        // // window.prompt("sometext", "defaultText");
+
+        // // window.open('https://www.w3schools.com/js/js_window.asp')
+        // var i = 0
+
+        // // i++
+
+
+
+
+
+        // var x = setInterval(() => {
+
+
+        //     console.log('===>', i++)
+
+        //     // console.log('1000', i)
+        //     if (i === 10) {
+
+        //         clearInterval(x)
+
+        //     }
+
+        // }, 100);
+
+        // console.log('---->', i)
+
+        // // setTimeout(() => {
+        // //     console.log('1000')
+
+        // // }, 1000);
+
+    </script>
+
+</body>
+
+</html>

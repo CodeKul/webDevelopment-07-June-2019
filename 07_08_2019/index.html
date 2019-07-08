@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p::after {
+            content: 'TEST DATA'
+        }
+
+        .red {
+            color: red;
+        }
+
+        #div1 {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button onclick="getData()"> click to get data </button>
+
+
+
+    <!-- 
+    <div id="div1">
+
+
+    </div>
+
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+    <input type="text" name="" id="test1">
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+
+    <a href="www.codekul.com" id="w3s"> codekul</a>
+
+
+    <button onclick="onClickFun()">
+        click
+    </button>
+    <img src="http://www.codekul.com/img/CODEKUL-min.png" alt=""> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        
+
+        function getData() {
+
+            $.get("http://dummy.restapiexample.com/api/v1/employees", function (data, status) {
+
+                // alert("Data: " + data + "\nStatus: " + status);
+
+            });
+
+
+            $.ajax({
+                type: "GET",
+                url: "serverscript.xxx",
+                // data: myusername,
+                // cache: false,
+                success: function (data) {
+                    $("#resultarea").text(data);
+                }
+            });
+        }
+
+
+        // $(document).ready(function () {
+        //     $("#btn1").click(function () {
+        //         // alert("Text: " + $("#test").text());
+        //         alert("Value: " + $("#test1").val('Raviraj'));
+
+        //     });
+        //     $("#btn2").click(function () {
+        //         alert("HTML: " + $("#test").html('Test Data'));
+        //     });
+
+        //     // alert($("#w3s").attr("id"));
+        //     $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+
+
+        // });
+
+        // function onClickFun() {
+        //     var txt1 = "<p>Text.</p>";        // Create text with HTML
+        //     var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+        //     var txt3 = document.createElement("p");
+        //     txt3.innerHTML = "Text.";         // Create text with DOM
+        //     $("body").append(txt1, txt2, txt3);   // Append new elements
+
+
+        //     $("img").after("Some text after");
+
+        //     $("img").before("Some text before");
+
+
+        //     $("#test").addClass("red");
+        //     $("#test").removeClass("red")
+
+        //     $("p").css({ "background-color": "yellow", "color": "red" });
+
+        //     console.log('$("#div1").height()', $("#div1").innerWidth())
+        // }
+
+    </script>
+</body>
+
+</html>
